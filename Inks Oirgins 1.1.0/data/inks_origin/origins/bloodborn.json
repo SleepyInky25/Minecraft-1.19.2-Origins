@@ -1,0 +1,21 @@
+{
+    "name": "Bloodborn",
+    "description": "§4A race of half human-demon hybrids! forged from an ancient race and fury.§4",
+    "powers": [
+        "inks_origin:bloodborn/essense",
+        "inks_origin:bloodborn/demonic_form",
+        "inks_origin:bloodborn/netherspawn",
+        "inks_origin:bloodborn/resistance",
+        "inks_origin:bloodborn/stages/stg_0",
+        "inks_origin:bloodborn/stages/stg_1",
+        "inks_origin:bloodborn/stages/stg_2",
+        "inks_origin:bloodborn/stages/stg_3",
+        "inks_origin:bloodborn/stages/stg_4"
+    ],
+    "icon": {
+        "item": "minecraft:goat_horn",
+        "amount": 1,
+        "tag": "{Enchantments:[{id:binding_curse,lvl:1}]} "
+    },
+    "impact": 2
+}

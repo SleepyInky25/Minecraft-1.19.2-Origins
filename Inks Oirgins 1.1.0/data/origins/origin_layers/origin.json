@@ -1,0 +1,9 @@
+{
+    "origins": [
+        "inks_origin:bloodborn",
+        "inks_origin:voidling",
+        "inks_origin:dwarf",
+        "inks_origin:paladin"
+    ],
+    "enabled": true
+}

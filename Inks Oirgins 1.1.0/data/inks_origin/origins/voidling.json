@@ -1,0 +1,13 @@
+{
+    "name": "Abysall Voidling",
+    "description": "§3Your a void entity made form stars and magic§3",
+    "powers": [
+        "inks_origin:voidling/abysalshape"
+    ],
+    "icon": {
+        "item": "minecraft:nether_star",
+        "amount": 1,
+        "tag": "{Enchantments:[{id:binding_curse,lvl:1}]}"
+    },
+    "impact": 1
+}

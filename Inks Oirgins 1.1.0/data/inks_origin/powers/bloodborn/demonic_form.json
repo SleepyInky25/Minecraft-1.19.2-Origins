@@ -1,0 +1,43 @@
+{
+    "name": "Demonic Burst",
+    "description": "Once your essense meter is full u can transform into a temporary stronger form",
+    "type": "origins:multiple",
+    "demonform": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:bloodborn/essense_resource",
+                    "comparison": "==",
+                    "compare_to": 100
+                },
+                {
+                    "type": "origins:and"
+                }
+            ]
+        },
+        "type": "origins:particle",
+        "particle": "minecraft:flame",
+        "frequency": 30,
+        "visible_in_first_person": true
+    },
+    "key1": {
+        "type": "origins:self_glow",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:bloodborn/essense_resource",
+                    "comparison": "==",
+                    "compare_to": 100
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    }
+}

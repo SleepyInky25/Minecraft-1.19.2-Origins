@@ -1,0 +1,13 @@
+{
+    "name": "Dwarf",
+    "description": "§6A pointed eared smaller race. Their pickaxes swing with the force of a thousand thunders.§6",
+    "powers": [
+        "inks_origin:dwarf/durable_stature"
+    ],
+    "icon": {
+        "item": "minecraft:netherite_pickaxe",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Paladin",
+    "description": "§6A furious holy knight who smites down foes in the name of order and good using the holy light from above.§6",
+    "powers": [
+        "inks_origin:paladin/iron_body"
+    ],
+    "icon": {
+        "item": "minecraft:shield",
+        "amount": 1,
+        "tag": "{Enchantments:[{id:binding_curse,lvl:1}]}"
+    },
+    "unchoosable": true,
+    "impact": 0
+}

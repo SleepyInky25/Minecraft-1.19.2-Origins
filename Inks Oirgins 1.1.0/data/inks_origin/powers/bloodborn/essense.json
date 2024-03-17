@@ -1,0 +1,74 @@
+{
+    "name": "Life Essense",
+    "description": "Being half demon allows you to consume life energy from mobs.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Kill mobs to grow stronger",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 15
+        }
+    },
+    "onkill": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:bloodborn/essense_resource",
+                    "change": 15,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.bell.resonate ambient @s ~ ~ ~ 1 .85 .9"
+                }
+            ]
+        },
+        "cooldown": 25
+    },
+    "death": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:change_resource",
+            "resource": "*:bloodborn/essense_resource",
+            "change": -100,
+            "operation": "add"
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.movement_speed base set 0.1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.max_health base set 20"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/attribute @s minecraft:generic.attack_damage base set 2"
+                }
+            ]
+        },
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "*:bloodborn/essense_resource",
+            "change": -100,
+            "operation": "add"
+        }
+    }
+}

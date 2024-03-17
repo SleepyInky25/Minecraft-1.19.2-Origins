@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Inks Oirgins",
+        "id": "inks_origin",
+        "pack_format": 10,
+        "version": "1.1.0",
+        "authors": [
+            "SleepyInky25"
+        ],
+        "description": "A pack with a few(or multiple) origins.\nCofee is just bean soup!"
+    }
+}

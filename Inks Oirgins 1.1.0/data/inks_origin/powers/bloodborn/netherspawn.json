@@ -1,0 +1,16 @@
+{
+    "name": "Natural Spawnpoint",
+    "description": "The nether is your home.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "U spawn in the crimson forest in the nether dimension",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:modify_player_spawn",
+    "dimension": "minecraft:the_nether",
+    "biome": "crimson_forest",
+    "spawn_strategy": "center",
+    "dimension_distance_multiplier": 0.125
+}

@@ -1,0 +1,54 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:bloodborn/essense_resource",
+                    "comparison": ">=",
+                    "compare_to": 50
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:bloodborn/essense_resource",
+                    "comparison": "<=",
+                    "compare_to": 75
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.movement_speed base set 0.15"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.max_health base set 22"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "attribute @s minecraft:generic.attack_damage base set 3"
+                }
+            ]
+        }
+    },
+    "particle": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:bloodborn/essense_resource",
+            "comparison": ">=",
+            "compare_to": 50
+        },
+        "type": "origins:particle",
+        "particle": "minecraft:fire",
+        "frequency": 10,
+        "visible_in_first_person": true
+    }
+}
